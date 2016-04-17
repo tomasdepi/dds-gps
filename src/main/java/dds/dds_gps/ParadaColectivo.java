@@ -2,8 +2,8 @@ package dds.dds_gps;
 
 public class ParadaColectivo extends Poi{
 	
-	ParadaColectivo(double lon, double lat, String nom, String calle, int num) {
-		super(lon, lat, nom, calle, num);
+	ParadaColectivo(Posicion pos, String nom, String calle, int num) {
+		super(pos, nom, calle, num);
 	}
 	
 	public int getDistMax(){

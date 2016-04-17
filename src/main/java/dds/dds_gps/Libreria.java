@@ -1,7 +1,9 @@
 package dds.dds_gps;
 
-public interface Libreria extends Rubro{
+public class Libreria implements Rubro{
 
-	public int getDistMax();
+	public int getDistMax(){
+		return 100;
+	};
 	
 }

@@ -1,13 +1,17 @@
 package dds.dds_gps;
 
-public class Local extends Poi implements Libreria{
+public class Local extends Poi{
 
-	Local(double lon, double lat, String nom, String calle, int num) {
-		super(lon, lat, nom, calle, num);
+	Rubro rubro;
+	
+	Local(Posicion pos, String nom, String calle, int num,Rubro rubro) {
+		super(pos, nom, calle, num);
+		this.rubro = rubro;
 	}
 	
-	public int getDistMax(){
-		return 1;
+	public boolean esCercanaDe(Poi lugar) {
+		return (rubro.getDistMax() < distanciaDe(lugar));
 	}
+
 	
 }
