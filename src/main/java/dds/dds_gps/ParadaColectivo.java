@@ -10,4 +10,8 @@ public class ParadaColectivo extends Poi{
 		return 1;
 	}
 	
+	public boolean estaDisponible(){
+		return true;
+	}
+	
 }
